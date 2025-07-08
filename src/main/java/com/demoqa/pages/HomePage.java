@@ -12,9 +12,15 @@ public class HomePage extends BasePage{
 
     @FindBy(css = ".card:nth-child(6)")
     WebElement bookstore;
-
     public SidePanel getBookStore() {
         click(bookstore);
+        return new SidePanel(driver);
+    }
+
+    @FindBy(css = ".card:nth-child(3)")
+    WebElement alertsFrameWindows;
+    public SidePanel getAlertsFrameWindows() {
+        clickWithJS(alertsFrameWindows, 0, 300);
         return new SidePanel(driver);
     }
 }
