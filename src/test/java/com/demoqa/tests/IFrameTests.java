@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class IFrameTests extends TestBase{
+
     @BeforeMethod
     public void precondition(){
         new HomePage(driver).getAlertsFrameWindows();
@@ -15,6 +16,22 @@ public class IFrameTests extends TestBase{
     @Test
     public void iFrameTest(){
         new SidePanel(driver).selectFrame();
-        new FramePage(driver).returnListOfFrames();
+        new FramePage(driver).returnListOfFrames()
+                .switchToIframeByIndex(2)
+                .verifyIFrameByText("This is a sample page");
+    }
+
+    @Test
+    public void IFrameTest2(){
+        new SidePanel(driver).selectFrame();
+        new FramePage(driver).switchToFrameById().verifyIFrameByText("sample page")
+                .switchToMainPage()
+                .verifyMainPageByTitle("Frames");
+    }
+
+    @Test
+    public void nestedIFramesTest(){
+        new SidePanel(driver).selectNestedFrames();
+        new FramePage(driver).handleNestedFrames();
     }
 }

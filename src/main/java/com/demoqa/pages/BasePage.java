@@ -53,4 +53,17 @@ public class BasePage {
         return new WebDriverWait(driver, Duration.ofSeconds(time))
                 .until(ExpectedConditions.textToBePresentInElement(element, text));
     }
+
+    public void hideAd(){
+        js.executeScript("document.getElementById('fixedban').style.display = 'none';");
+    }
+
+    public void hideFooter(){
+        js.executeScript("document.querySelector('footer').style.display = 'none'");
+    }
+
+    public void hideIFrames() {
+        hideAd();
+        hideFooter();
+    }
 }

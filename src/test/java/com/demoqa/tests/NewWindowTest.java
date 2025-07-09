@@ -1,0 +1,23 @@
+package com.demoqa.tests;
+
+import com.demoqa.pages.HomePage;
+import com.demoqa.pages.SidePanel;
+import com.demoqa.pages.alertsFrameWindows.BrowserWindows;
+import org.openqa.selenium.devtools.idealized.ScriptId;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class NewWindowTest extends TestBase {
+    @BeforeMethod
+    public void precondition() {
+        new HomePage(driver).getAlertsFrameWindows();
+        new SidePanel(driver).selectBrowserWindows()
+                .hideIFrames();
+    }
+
+    @Test
+    public void newTabTest() {
+        new BrowserWindows(driver).switchToNewTab(1)
+                .verifyNewTabTitle("This is a sample page");
+    }
+}
