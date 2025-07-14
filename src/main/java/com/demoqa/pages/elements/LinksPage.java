@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Iterator;
 import java.util.List;
@@ -32,8 +33,43 @@ public class LinksPage extends BasePage {
     }
 
     public LinksPage verifyLinks(String url) {
+        try {
         URL linkUrl = new URL(url);
+        HttpURLConnection connection = (HttpURLConnection)linkUrl.openConnection();
+        connection.setConnectTimeout(1000);
+        connection.connect();
+        if (connection.getResponseCode() >= 400) {
+            System.out.println(url + " - " + connection.getResponseMessage() + "Is broken link");
+        } else {
+            System.out.println(url + " - " + connection.getResponseMessage());
+        }
+
+        } catch(Exception e){
+            System.out.println(url + " - " + e.getMessage() + "Error");
+        }
         return this;
     }
 
+    @FindBy(css = "img")
+    List<WebElement> img;
+    public LinksPage checkBrokenImg() {
+        System.out.println(img.size() + " - " + "img");
+        for (int i = 0; i < img.size(); i++) {
+            WebElement element = img.get(i);
+            String imgUrl = element.getAttribute("src");
+            verifyLinks(imgUrl);
+            try {
+                Boolean imgDisplayed = (Boolean)
+                        (js.executeScript("return (typeof arguments[0].naturalWidth!=undefined && arguments[0].naturalWidth>0);", element));
+                if (imgDisplayed) {
+                    System.out.println("DISPLAYED - OK");
+                } else {
+                    System.out.println("DISPLAYED IS BROKEN");
+                }
+            } catch (Exception e) {
+                System.out.println("ERROR");
+            }
+        }
+        return this;
+    }
 }
