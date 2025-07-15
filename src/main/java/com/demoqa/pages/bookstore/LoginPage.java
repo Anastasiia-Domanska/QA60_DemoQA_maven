@@ -13,17 +13,16 @@ public class LoginPage extends BasePage {
 
     @FindBy(xpath = "//input[@id='userName']")
     WebElement user;
+
     @FindBy(xpath = "//input[@id='password']")
     WebElement passwordField;
-
     public LoginPage enterUserData(String userName, String password) {
         type(user, userName);
-        //typeWithJS(passwordField, password, 0, 300);
-        type(passwordField, password);
+        typeWithJS(passwordField, password, 0, 300);
         return this;
     }
 
-    @FindBy(xpath = "//button[@id='login']")
+    @FindBy(xpath ="//button[@id='login']")
     WebElement loginButton;
     public ProfilePage clickOnLoginButton() {
         click(loginButton);

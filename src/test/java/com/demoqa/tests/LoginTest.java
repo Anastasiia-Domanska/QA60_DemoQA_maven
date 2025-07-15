@@ -10,14 +10,14 @@ import org.testng.annotations.Test;
 public class LoginTest extends TestBase {
 
     @BeforeMethod
-    public void precondition(){
+    public void precondition() {
         new HomePage(driver).getBookStore();
         new SidePanel(driver).selectLogin();
     }
 
     @Test
-    public void loginPositiveTest(){
-        new LoginPage(driver).enterUserData("Ana", "Aa12345!").clickOnLoginButton();
-        new ProfilePage(driver).verifyUserName("Ana");
+    public void loginPositiveTest() {
+        new LoginPage(driver).enterUserData("Eva", "Qa12345!").clickOnLoginButton();
+        new ProfilePage(driver).verifyUserName("Eva");
     }
 }

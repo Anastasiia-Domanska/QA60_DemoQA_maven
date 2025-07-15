@@ -3,7 +3,6 @@ package com.demoqa.pages;
 import com.demoqa.pages.alertsFrameWindows.AlertsPage;
 import com.demoqa.pages.alertsFrameWindows.BrowserWindows;
 import com.demoqa.pages.alertsFrameWindows.FramePage;
-import com.demoqa.pages.bookstore.LoginPage;
 import com.demoqa.pages.elements.ButtonsPage;
 import com.demoqa.pages.elements.LinksPage;
 import com.demoqa.pages.elements.TextBoxPage;
@@ -25,10 +24,10 @@ public class SidePanel extends BasePage{
 
     @FindBy( xpath = "//span[.='Login']")
     WebElement login;
-    public LoginPage selectLogin() {
+    public com.demoqa.pages.bookstore.LoginPage selectLogin() {
         click(login);
         // clickWithJS(login, 0, 600);
-        return new LoginPage(driver);
+        return new com.demoqa.pages.bookstore.LoginPage(driver);
     }
 
     @FindBy( xpath = "//span[.='Alerts']")

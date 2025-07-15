@@ -20,12 +20,27 @@ public class PracticeFormTest extends TestBase {
                 .selectGender("Female")
                 .enterDate("16 Aug 1987")
                 .addSubject(new String[]{"Maths", "Chemistry"})
-//                .selectHobbies(new String[]{"Sports", "Music"})
-//                .apployedFile("C:/Users/akvad/Desktop/img 1.webp")
-//                .inputState("NCR")
-//                .inputCity("Delhi")
-//                .submit()
-//                .verifySuccessRegistration("")
+                .selectHobbies(new String[]{"Sports", "Music"})
+                .apploadFile("C:/Users/akvad/Desktop/img 1.webp")
+                .inputState("NCR")
+                .inputCity("Delhi")
+                .submit()
+                .verifySuccessRegistration("Thanks for submitting the form")
                 ;
+    }
+
+    @Test
+    public void createStudentAccountWithSelectDate(){
+        new PracticeFormPage(driver).enterPersonalData("Ana", "Smith", "test@gmail.com", "0123456789")
+                .selectGender("Female")
+                .selectDate("August", "1987", "16")
+                .addSubject(new String[]{"Maths", "Chemistry"})
+                .selectHobbies(new String[]{"Sports", "Music"})
+                .apploadFile("C:/Users/akvad/Desktop/img 1.webp")
+                .inputState("NCR")
+                .inputCity("Delhi")
+                .submit()
+                .verifySuccessRegistration("Thanks for submitting the form")
+        ;
     }
 }
