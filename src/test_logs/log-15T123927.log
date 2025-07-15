@@ -1,0 +1,17 @@
+12:39:29.186 [main] INFO  org.testng.internal.Utils -%PARSER_ERROR[kvp]- [TestNG] Running:
+  C:\Users\akvad\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+12:39:36.952 [main] INFO  com.demoqa.tests.TestBase -%PARSER_ERROR[kvp]- Start test: checkAllLinksTest
+12:39:37.116 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- The locator will findBy.cssSelector: .card:nth-child(1)
+12:39:37.116 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+12:39:37.344 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- The locator is By.cssSelector: .card:nth-child(1)
+12:39:37.344 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+12:39:37.752 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- The locator will findBy.xpath: //span[.='Links']
+12:39:37.752 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+12:39:37.820 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- The locator is By.xpath: //span[.='Links']
+12:39:37.821 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+12:39:39.431 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- Before Find Elements By.cssSelector: a
+12:39:39.431 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- *******************************************
+12:39:39.830 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- List size is 12
+12:39:39.830 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+12:39:39.847 [main] INFO  com.demoqa.tests.TestBase -%PARSER_ERROR[kvp]- Test result: PASSED checkAllLinksTest

@@ -1,0 +1,28 @@
+12:43:14.562 [main] INFO  org.testng.internal.Utils -%PARSER_ERROR[kvp]- [TestNG] Running:
+  C:\Users\akvad\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+12:43:24.314 [main] INFO  com.demoqa.tests.TestBase -%PARSER_ERROR[kvp]- Start test: loginPositiveTest
+12:43:24.726 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- The locator will findBy.cssSelector: .card:nth-child(6)
+12:43:24.726 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+12:43:24.927 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- The locator is By.cssSelector: .card:nth-child(6)
+12:43:24.928 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+12:43:25.285 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- The locator will findBy.xpath: //span[.='Login']
+12:43:25.286 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+12:43:25.663 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- The locator is By.xpath: //span[.='Login']
+12:43:25.663 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+12:43:26.780 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- Test have a problem
+12:43:26.780 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- **********************************************
+12:43:26.781 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- Method -->click
+12:43:26.782 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- **********************************************
+12:43:26.785 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- TargetException -->org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="text">...</span> is not clickable at point (104, 673). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=138.0.7204.101)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ab86ff9bdda57811c3e2cd1f5c47bad, clickElement {id=f.1C2BEA37DDA16614CC62BA9E8519D069.d.59CF90CBDAB6B0BCAD3B232665DE93DE.e.57}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\akvad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53312}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53312/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6ab86ff9bdda57811c3e2cd1f5c47bad)] -> xpath: //span[.='Login']]
+Session ID: 6ab86ff9bdda57811c3e2cd1f5c47bad
+12:43:26.787 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+12:43:26.788 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- Object target -->[[ChromeDriver: chrome on windows (6ab86ff9bdda57811c3e2cd1f5c47bad)] -> xpath: //span[.='Login']]
+12:43:26.788 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************

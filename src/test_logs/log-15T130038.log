@@ -1,0 +1,31 @@
+13:00:40.300 [main] INFO  org.testng.internal.Utils -%PARSER_ERROR[kvp]- [TestNG] Running:
+  C:\Users\akvad\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+13:00:51.569 [main] INFO  com.demoqa.tests.TestBase -%PARSER_ERROR[kvp]- Start test: checkAllLinksTest
+13:00:51.675 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- The locator will findBy.cssSelector: .card:nth-child(1)
+13:00:51.676 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+13:00:51.742 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- The locator is By.cssSelector: .card:nth-child(1)
+13:00:51.743 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+13:00:52.162 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- The locator will findBy.xpath: //span[.='Links']
+13:00:52.165 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+13:00:52.294 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- The locator is By.xpath: //span[.='Links']
+13:00:52.294 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+13:00:52.989 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- Before Find Elements By.id: 
+13:00:52.989 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- *******************************************
+13:00:53.056 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- Test have a problem
+13:00:53.057 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- **********************************************
+13:00:53.057 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- Method -->findElements
+13:00:53.057 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- **********************************************
+13:00:53.062 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- TargetException -->org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1da8d85371191ba723d05a13ae6db1dd, findElements {value=, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\akvad\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54174}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54174/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1da8d85371191ba723d05a13ae6db1dd
+13:00:53.062 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+13:00:53.062 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- Object target -->ChromeDriver: chrome on windows (1da8d85371191ba723d05a13ae6db1dd)
+13:00:53.062 [main] INFO  com.demoqa.utils.MyListener -%PARSER_ERROR[kvp]- ********************************************
+13:00:53.678 [main] ERROR com.demoqa.tests.TestBase -%PARSER_ERROR[kvp]- Test result: FAILED checkAllLinksTest
