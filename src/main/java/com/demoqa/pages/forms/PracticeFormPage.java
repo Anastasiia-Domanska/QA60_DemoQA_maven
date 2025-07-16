@@ -26,8 +26,8 @@ public class PracticeFormPage extends BasePage {
     public PracticeFormPage enterPersonalData(String name, String surName, String email, String phone) {
         typeWithJS(firstName, name, 0, 300);
         type(lastName, surName);
-        type(userEmail, email);
-        type(userNumber, phone);
+        typeWithJS(userEmail, email, 0, 300);
+        typeWithJS(userNumber, phone, 0, 300);
         return this;
     }
 

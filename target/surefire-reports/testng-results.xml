@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-16T12:26:38 CEST" name="user" finished-at="2025-07-16T12:27:45 CEST" duration-ms="67130">
+    <groups>
+    </groups>
+    <test started-at="2025-07-16T12:26:38 CEST" name="user" finished-at="2025-07-16T12:27:45 CEST" duration-ms="67130">
+      <class name="com.demoqa.tests.SearchBookTests">
+        <test-method is-config="true" signature="init(java.lang.reflect.Method)[pri:0, instance:com.demoqa.tests.SearchBookTests@2fd1433e]" started-at="2025-07-16T12:27:31 CEST" name="init" finished-at="2025-07-16T12:27:40 CEST" duration-ms="9514" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demoqa.tests.SearchBookTests.searchBookPositiveTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.demoqa.tests.SearchBookTests@2fd1433e]" started-at="2025-07-16T12:27:40 CEST" name="precondition" finished-at="2025-07-16T12:27:41 CEST" duration-ms="903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="searchBookPositiveTest()[pri:0, instance:com.demoqa.tests.SearchBookTests@2fd1433e]" started-at="2025-07-16T12:27:41 CEST" name="searchBookPositiveTest" finished-at="2025-07-16T12:27:43 CEST" duration-ms="1762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBookPositiveTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoqa.tests.SearchBookTests@2fd1433e]" started-at="2025-07-16T12:27:43 CEST" name="tearDown" finished-at="2025-07-16T12:27:45 CEST" duration-ms="1990" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchBookPositiveTest status=SUCCESS method=SearchBookTests.searchBookPositiveTest()[pri:0, instance:com.demoqa.tests.SearchBookTests@2fd1433e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demoqa.tests.SearchBookTests -->
+      <class name="com.demoqa.tests.LinksTest">
+        <test-method is-config="true" signature="init(java.lang.reflect.Method)[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d]" started-at="2025-07-16T12:26:38 CEST" name="init" finished-at="2025-07-16T12:26:53 CEST" duration-ms="14536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demoqa.tests.LinksTest.checkAllLinksTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d]" started-at="2025-07-16T12:26:53 CEST" name="precondition" finished-at="2025-07-16T12:26:54 CEST" duration-ms="1249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="checkAllLinksTest()[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d]" started-at="2025-07-16T12:26:54 CEST" name="checkAllLinksTest" finished-at="2025-07-16T12:26:57 CEST" duration-ms="3003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAllLinksTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d]" started-at="2025-07-16T12:26:57 CEST" name="tearDown" finished-at="2025-07-16T12:26:59 CEST" duration-ms="2437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkAllLinksTest status=SUCCESS method=LinksTest.checkAllLinksTest()[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method)[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d]" started-at="2025-07-16T12:26:59 CEST" name="init" finished-at="2025-07-16T12:27:09 CEST" duration-ms="9589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demoqa.tests.LinksTest.checkBrokenImgTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d]" started-at="2025-07-16T12:27:09 CEST" name="precondition" finished-at="2025-07-16T12:27:10 CEST" duration-ms="751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="checkBrokenImgTest()[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d]" started-at="2025-07-16T12:27:10 CEST" name="checkBrokenImgTest" finished-at="2025-07-16T12:27:13 CEST" duration-ms="3469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBrokenImgTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d]" started-at="2025-07-16T12:27:13 CEST" name="tearDown" finished-at="2025-07-16T12:27:15 CEST" duration-ms="1672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkBrokenImgTest status=SUCCESS method=LinksTest.checkBrokenImgTest()[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="init(java.lang.reflect.Method)[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d]" started-at="2025-07-16T12:27:15 CEST" name="init" finished-at="2025-07-16T12:27:25 CEST" duration-ms="10148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demoqa.tests.LinksTest.checkBrokenLinksTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d]" started-at="2025-07-16T12:27:25 CEST" name="precondition" finished-at="2025-07-16T12:27:26 CEST" duration-ms="1068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- precondition -->
+        <test-method signature="checkBrokenLinksTest()[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d]" started-at="2025-07-16T12:27:26 CEST" name="checkBrokenLinksTest" finished-at="2025-07-16T12:27:29 CEST" duration-ms="2920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBrokenLinksTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d]" started-at="2025-07-16T12:27:29 CEST" name="tearDown" finished-at="2025-07-16T12:27:31 CEST" duration-ms="1811" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkBrokenLinksTest status=SUCCESS method=LinksTest.checkBrokenLinksTest()[pri:0, instance:com.demoqa.tests.LinksTest@1f97cf0d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demoqa.tests.LinksTest -->
+    </test> <!-- user -->
+  </suite> <!-- user -->
+</testng-results>
